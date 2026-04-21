@@ -1,0 +1,60 @@
+\documentclass[]{include/latex-class-ceurart/ceurart}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{url}\urlstyle{tt}
+\usepackage{bm}
+\usepackage{wrapfig}
+
+\usepackage{include/macros/listings}
+
+\input{include/flatland/flatland}
+\usetikzlibrary{shapes, arrows, positioning}
+
+\input{include/macros/systems}
+\newcommand{\flaspland}{\sysfont{flaspland}}
+\newcommand{\Flaspland}{\sysfont{Flaspland}}
+%\lstset{xleftmargin=2\parindent,aboveskip=\smallskipamount,belowskip=\smallskipamount,captionpos=b}
+%\lstset{numbers=left,numberblanklines=false,basicstyle=\ttfamily}
+
+%\lstdefinelanguage{clingos}{%
+ % language=clingo,%
+%  basicstyle=\small\ttfamily%
+%}
+%\makeatletter\lst@AddToHook{OnEmptyLine}{\vspace{\dimexpr-\baselineskip+\medskipamount\relax}}\makeatother
+
+%\input{macro}
+%\newcommand{\notation}[1]{\par\smallskip\noindent\textbf{Notation.}{\em~#1}\par}
+%\newtheorem{proposition}{Proposition}
+
+% \usepackage{comments}
+
+\begin{document}
+\conference{22nd Doctoral Consortium (DC) on Logic Programming}
+
+\title{ICLP-DC-SS-2026: \\ Modeling Railway Systems in Answer Set Programming}
+
+\author[1]{Ryan Murphy}[email=ryan.murphy@uni-potsdam.de]
+\address[1]{University of Potsdam, Germany}
+
+\maketitle
+
+\input{abstract}
+\input{introduction}
+\input{background}
+\input{goal}
+\input{status}
+\input{results}
+\input{issues}
+\appendix
+%\input{source}
+\bibliography{krr,procs}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: t
+%%% End:

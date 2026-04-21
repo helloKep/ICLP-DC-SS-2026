@@ -1,0 +1,12 @@
+[submodule "include/bibliography"]
+	path = include/bibliography
+	url = ../bibliography
+[submodule "include/comments"]
+	path = include/comments
+	url = ../latex-style-comments
+[submodule "include/latex-class-ceurart"]
+	path = include/latex-class-ceurart
+	url = ../latex-class-ceurart.git
+[submodule "include/macros"]
+	path = include/macros
+	url = ../asp-macros

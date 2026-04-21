@@ -1,0 +1,48 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{ifthen}
+\input{../include/flatland/flatland}
+\usetikzlibrary{shapes, arrows, positioning}
+\begin{document}
+\begin{flatland-env}
+  \track{72}    {0}{0}{}
+  \track{3089}  {1}{0}{}
+  \track{1025}  {2}{0}{}
+  \track{4608}  {3}{2}{}
+  \track{2064}  {3}{0}{}
+  \track{16386} {0}{1}{}
+  \track{38433} {1}{1}{}
+  \track{1025}  {2}{1}{}
+  \track{6672}  {3}{1}{}
+
+  \track{16386} {1}{2}{}
+  \track{1025}  {2}{2}{}
+
+  % train
+  \node (fig1) at (2,2)
+  {\includegraphics[width=12mm, angle=90]{../include/flatland/img/zug}};
+  \track{4608}{3}{2}{}
+
+  % station
+  \node [yshift=0.65cm](fig2) at (2,0)
+  {\includegraphics[width=12mm, angle=0]{../include/flatland/img/bahnhof}};
+
+  % top coordinate labels
+  \foreach \x in {0,1,2,3} {
+    \node[above, yshift=7.5mm] at (\x,2) {\x};
+  }
+
+  % left coordinate labels
+  % \foreach \y [evaluate=\y as \label using((\y - 2) * -1)] in {0,1,2} {
+  % \node[left, xshift=-7.5mm] at (0,\y) {\label};
+  % }
+  \node[left, xshift=-7.5mm] at (0,0) {2};
+  \node[left, xshift=-7.5mm] at (0,1) {1};
+  \node[left, xshift=-7.5mm] at (0,2) {0};
+\end{flatland-env}
+\end{document}
+%
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: t
+%%% End:

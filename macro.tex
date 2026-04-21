@@ -1,0 +1,42 @@
+\newcommand{\positionFunc}{\ensuremath{p}}
+\newcommand{\typeFunc}{\ensuremath{t}}
+\newcommand{\neighborFunc}{\ensuremath{a}}
+
+\newcommand{\type}[1]{\ensuremath{\typeFunc(#1)}}
+\newcommand{\neighbor}[2]{\ensuremath{\neighborFunc(#1,#2)}}
+
+\newcommand{\startFunc}{\ensuremath{s}}
+\newcommand{\goalFunc}{\ensuremath{g}}
+\newcommand{\orientationFunc}{\ensuremath{o}}
+\newcommand{\departFunc}{\ensuremath{\delta}}
+\newcommand{\arriveFunc}{\ensuremath{\alpha}}
+
+\newcommand{\start}[1]{\ensuremath{\startFunc(#1)}}
+\newcommand{\goal}[1]{\ensuremath{\goalFunc(#1)}}
+\newcommand{\orientation}[1]{\ensuremath{\orientationFunc(#1)}}
+\newcommand{\depart}[1]{\ensuremath{\departFunc(#1)}}
+\newcommand{\arrive}[1]{\ensuremath{\arriveFunc(#1)}}
+
+\newcommand{\forward}{\ensuremath{f}}
+\newcommand{\lefturn}{\ensuremath{l}}
+\newcommand{\righturn}{\ensuremath{r}}
+\newcommand{\wait}{\ensuremath{w}}
+
+\newcommand{\resultFunc}{\ensuremath{d}}
+\newcommand{\preconditionFunc}{\ensuremath{p}}
+
+\newcommand{\result}[1]{\ensuremath{\resultFunc(#1)}}
+\newcommand{\precondition}[1]{\ensuremath{\preconditionFunc(#1)}}
+
+\newcommand{\connected}[1]{%
+  \mathrel{\vbox{\offinterlineskip\ialign{%
+    \hfil##\hfil\cr%
+    $\scriptstyle\mathit{#1}$\cr%
+    \noalign{\kern1pt}%
+    $\hookrightarrow$\cr%
+    \noalign{\kern-0.1pt}%
+}}}}
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: "paper"
+%%% End:
