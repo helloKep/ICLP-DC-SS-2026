@@ -1,18 +1,41 @@
 \section{Background}\label{sec:background}
 
-\begin{enumerate}
-	\item Research into railway operations began as early as the 1950s and 1960s, when such papers as \textit{A Model for the Optimal Programming of Railway Freight Train Movements} in 1956 \cite{chamil56a} and \textit{Timetables for a Suburban Rail Transit System} in 1969 \cite{salzborn69a} sought to formalize problems in the domain by appealing to fields such as management science and linear programming.
-	\item For the rest of the twentieth century, the railway operations literature grew as researchers explored solutions involving dynamic programming and branch and bound procedures \cite{petmer81a}, integer programming and heuristics \cite{caigoh94a}, Lagrangian relaxation (cite: Lindberg,  Nou, Nilsson), among others
-	\item Flatland
-	\item Answer set programming has tackled problems in similar domains, such as multi-agent pathfinding, job shop scheduling, airline and traffic management, etc.
-	\begin{enumerate}
-		\item The hybrid railway scheduling paper for SBB \cite{abjoossctowa21a}
-		\item Some of Klaus's papers for MAPF
-		\item Martin Gebser's Decomposition strategies
-		\item Alice's Traffic Signal paper from TAASP
-		\item Alexander's Air Traffic Flow work on capacity
-	\end{enumerate}
-\end{enumerate}
+Research into railway operations gained significant traction in the middle of the twentieth century, when such papers as 
+\textit{A Model for the Optimal Programming of Railway Freight Train Movements} in 1956 \cite{chamil56a} and 
+\textit{Timetables for a Suburban Rail Transit System} in 1969 \cite{salzborn69a} 
+sought to formalize problems in the domain by appealing to fields such as management science and linear programming.
+Over the following decades, the railway operations literature grew as researchers explored solutions involving 
+dynamic programming and branch and bound procedures \cite{petmer81a}, 
+integer programming and heuristics \cite{caigoh94a}, 
+Lagrangian relaxation \cite{brlinoni98a}, among others.
+
+In recent years, large railway operators have kept an open mind to novel approaches in 
+machine learning, artificial intelligence, and other academic disciplines
+as potential solutions to a growing number of problems in transportation.
+The Swiss Federal Railway (SBB), for example, founded the Flatland Challenge \cite{monylascscbhwaegeibavistsasp20a},
+a global online railway scheduling and rescheduling competition
+in search of efficient ways of managing dense railway traffic.
+While the organizers have shown a particular affinity for reinforcement learning and imitation learning solutions,
+they have kept an open mind toward a wider array of approaches.
+
+Answer set programming has already demonstrated success with problems in similar domains, such as 
+multi-agent pathfinding \cite{ngobsoscye21a}, 
+scheduling problems \cite{bainkaokscsotawa19a} \cite{elgesc22a}, and
+traffic management \cite{tamava25a}.
+Pathfinding is a key component of railway planning,
+and given that multiple trains share a common network with the mandate to find collision-free paths to their goals,
+one can view this as a multi-agent pathfinding problem.
+Similarly, since trains may be expected to follow a fixed timetable,
+one can view this as a scheduling problem, 
+in which certain events must occur in a particular order or deadlines must be respected.
+Furthermore, the execution of railway activity may deviate from its intended plan, leading to congestion and delays.
+In this way, the central management of railway operations resembles the problem of urban traffic control.
+
+In fact, answer set programming has even already been proven to work when put to the test.
+The hybrid system \textit{clingo}[DL] has been used to successfully create train schedules 
+over a period of six hours for a portion of Switzerland containing hundreds of train lines
+in a matter of minutes \cite{abjoossctowa21a}.
+
 
 %
 %%% Local Variables:
