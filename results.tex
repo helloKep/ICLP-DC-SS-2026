@@ -1,15 +1,41 @@
 \section{Preliminary results}\label{sec:results}
 
-\begin{enumerate}
-	\item The research techniques have already been applied to Flatland, a global railway scheduling competition
-	\item We have developed an extensive formalization of the Flatland environment that can be generalized to other railway network contexts 
-	\item We have tested several encodings:
-	\begin{enumerate}
-		\item various representations of the Flatland environment
-		\item translations from MAPF encodings
-		\item difference logic
-	\end{enumerate}		
-\end{enumerate}
+One of the most interesting developments has been gaining
+a better understanding of how the Flatland problem differs from other
+well-explored domains, for instance multi-agent pathfinding.
+In common multi-agent pathfinding problems,
+agents exist in a grid and have a consistent number of degrees of freedom,
+meaning aside from the presence of obstacles or boundaries,
+agents are free to move to any unoccupied adjacent cell.
+In Flatland, movements become more restricted,
+for example because trains may only move forward,
+meaning we have to preserve information about their orientation.
+Furthermore, trains are bounded to the topology of the track,
+limiting their possible transitions to only one or two adjacent cells.
+
+To take advantage of these more narrowly-defined conditions,
+the aforementioned \textit{Flaspland} paper puts forth a hypothesis that 
+alternative representations of the environment yield performance advantages
+over the standard grid-based environment as the problem scales.
+We first developed encodings that translate the environment into various graph structures,
+and then use a common pathfinding encoding,
+whose rules correspond to those defined in our formalization,
+to calculate collision-free paths
+along each of the graphs.
+To supply a baseline for comparison, 
+we retrofitted an existing multi-agent pathfinding encoding \cite{!!}
+that takes as input the standard grid-based environment.
+The results show that as the number of agents in an environment grows,
+the alternative representations outperform the baseline \cite{munerosc26a}.
+While the alternative approaches tend to fall behind in grounding time,
+they make up for it in solving time.
+This suggests that there may yet be potential improvements if grounding
+can be further reduced.
+From these initial results, we are excited to explore
+different styles of encodings,
+further alternative representations of environments,
+and difference logic,
+to name a few.
 
 %
 %%% Local Variables:

@@ -1,0 +1,56 @@
+<mxfile host="Electron" modified="2026-05-02T13:05:12.985Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="hbuFM8XZtvaquO9Z-lJ8" version="24.1.0" type="device">
+  <diagram name="Page-1" id="JI3ELtdowC-pnG02HGi4">
+    <mxGraphModel dx="825" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Georgia;" edge="1" parent="1" source="rsL-23o-OIZR2Fp72Ngx-1" target="rsL-23o-OIZR2Fp72Ngx-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-21" value="&lt;font face=&quot;Georgia&quot;&gt;static&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-family: Georgia;&quot;&gt;facts&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rsL-23o-OIZR2Fp72Ngx-5">
+          <mxGeometry x="-0.1713" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-1" value="Environment" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-2" value="Scheduling" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-3" value="Rescheduling" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Georgia;dashed=1;" edge="1" parent="1" source="rsL-23o-OIZR2Fp72Ngx-4" target="rsL-23o-OIZR2Fp72Ngx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-17" value="malfunctions" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Georgia;" vertex="1" connectable="0" parent="rsL-23o-OIZR2Fp72Ngx-16">
+          <mxGeometry x="-0.0028" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-4" value="Simulation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.835;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Georgia;dashed=1;" edge="1" parent="1" source="rsL-23o-OIZR2Fp72Ngx-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="441.20000000000005" y="120.19999999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-14" value="updated&lt;div&gt;plan&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Georgia;" vertex="1" connectable="0" parent="rsL-23o-OIZR2Fp72Ngx-10">
+          <mxGeometry x="-0.0704" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.006;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="rsL-23o-OIZR2Fp72Ngx-2" target="rsL-23o-OIZR2Fp72Ngx-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rsL-23o-OIZR2Fp72Ngx-19" value="&lt;span style=&quot;font-family: Georgia;&quot;&gt;idealized&lt;/span&gt;&lt;div style=&quot;font-family: Georgia;&quot;&gt;plan&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rsL-23o-OIZR2Fp72Ngx-18">
+          <mxGeometry x="0.0185" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
