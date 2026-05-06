@@ -1,17 +1,49 @@
 \section{Introduction}\label{sec:introduction}
 
-\begin{enumerate}
-	\item As modern railway systems increase in complexity, operators face numerous challenges that require advanced technical solutions \cite{monylascscbhwaegeibavistsasp20a}
-	\item The field of railway operations comprises numerous research topics spanning several domains, which have been the subject of academic and industry research for decades \dots
-	\begin{enumerate}
-		\item VSP in 1981
-		\item VRSP in 2007
-		\item others \dots
-	\end{enumerate}
-	\item Railway scheduling in particular is \dots
-	\item Answer set programming is a programming methodology oriented towards combinatorial search problems \cite{lifschitz19a} in which a program describes what is counted as a solution to the problem, but does not specify an algorithm for solving it
-	\item It is well suited for such problems because \dots
-\end{enumerate}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.60\linewidth, keepaspectratio]{figures/example-small.png}
+  \caption{An example Flatland railway environment.}
+  \label{fig:environment}
+\end{figure}
+
+Railway systems face numerous operational challenges in planning and execution,
+and have been the subject of research for decades, particularly since the middle of the twentieth century.
+By 2002, it was proven that developing train timetables for a single track belongs to the class NP-Hard \cite{}.
+As modern railway systems grow,
+both in terms of their networks and their passenger demand,
+the real problems they face become more complex
+and require more advanced solutions.
+
+Tasked with solving such complex issues
+and inspired by advancements in digital technology,
+the Swiss Federal Railway (SBB) founded \textit{Flatland},
+a global online railway scheduling and rescheduling competition
+to crowdsource novel approaches to modern-day problems.
+My research began in 2023 as an attempt to use answer set programming (ASP)
+as an alternative to the machine learning approaches.
+This culminated in a master thesis that outlined the creation of a toolkit
+now known as \textit{flaspland}
+that provides an interface between \textit{Flatland} written in Python
+and ASP written in clingo.
+The work also established standard fact formats for representing railway environments
+and put forth simple baseline encodings for safely navigating trains.
+
+The research continues today in the form of Ph.D. work
+under the supervision of Prof. Dr. Torsten Schaub,
+and includes a graduate-level railway scheduling course,
+where students explore solutions to open research topics,
+and theses written by highly-motivated students
+with a particular affinity for
+research at the intersection between
+knowledge representation and public transportation.
+In this paper, I will: 
+provide \textbf{background context} into the history of railway research, modern approaches, and the advantages of answer set programming; 
+outline my \textbf{research goals} for the next few years; 
+highlight the \textbf{current status} of this research;
+share some \textbf{preliminary results};
+and bring attention to \textbf{milestones} that lie on the horizon.
+
 
 %
 %%% Local Variables:

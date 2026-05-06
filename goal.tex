@@ -7,19 +7,36 @@ as well as initial encodings,
 has enabled us to see how the problems in modeling railway systems 
 align with or differ from those encountered in similar domains.
 
-The primary focuses of Flatland are the 
+Following this, the aim is to exhaustively complete the Flatland problem,
+which necessitates a solution to both the 
 vehicle scheduling problem (VSP) and
 the vehicle rescheduling problem (VRSP).
+Described in more detail in Section~\ref{sec:issues},
+the extension into VRSP requires the ability to handle
+stochastic malfunctions,
+which represent breakdowns and delays that occur every day
+in real railway networks.
+VSP instances take place during the operational planning phase
+and since these occur ahead of time,
+we can be more forgiving about how long it takes to find an acceptable solution.
+VRSP instances take place in response to unforeseen events,
+and since the surrounding conditions can change in real time,
+preference is given to finding a solution quickly
+over finding an optimal solution.
 
-Ultimately, this body of understanding can be translated to more general problems faced by railway operators.
+Beyond just Flatland, this body of understanding can be translated to more general problems faced by railway operators.
 Narayanaswami and Rangaraj classify problems in railway operations into broad categories from planning to execution \cite{narran2011a}.
 Specific problems from across that spectrum that are worth addressing include
 \begin{itemize}
 	\item routing and scheduling
-	\item acute replanning during adverse events
+	\item preemptive replanning for adverse events
 	\item valid switch position logic (such as that used by the ILTIS system)
 	\item energy utilization
 	\item route synchronization
+	\item modeling speed and acceleration
+	\item personnel management
+	\item rolling stock management
+	\item maintenance scheduling
 \end{itemize}
 Although solutions to many issues in the realm of transportation are rooted in public policy,
 it is my hope that this research can contribute to the solving of problems that require or can benefit from technological solutions.
