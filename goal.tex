@@ -1,13 +1,29 @@
 \section{Research goals}\label{sec:goal}
 
 The goal of this research is to establish best practices for modeling large railway systems in answer set programming.
-Our initial goal has been to understand large railway systems by leveraging Flatland as a virtual railway environment generator and simulator.
-In doing so, developing a comprehensive formalization of the problem, 
-as well as initial encodings, 
-has enabled us to see how the problems in modeling railway systems 
-align with or differ from those encountered in similar domains.
+In short, this can be seen in three phases:
+\begin{enumerate}
+	\item Formalization of railway environments
+	\item Solutions to the Flatland problem
+	\item Application to real challenges 
+\end{enumerate}
+	
+\subsection{Formalization}
+Our initial goal has been to formally understand large railway systems.
+By leveraging the Flatland ecosystem
+as a virtual railway generator and simulator,
+we have obtained an end-to-end view
+over a large sample of environments.
+This means we have been able to 
+consider a large diversity of characteristics in environments
+and iteratively test and refine our formal definitions.
+Additionally, developing a comprehensive formalization
+has enabled us to better relate the problems in modeling railway systems 
+to those encountered in similar domains.
+%as well as initial encodings, 
 
-Following this, the aim is to exhaustively complete the Flatland problem,
+\subsection{Solution}
+Following this, the aim is to exhaustively solve the Flatland problem,
 which necessitates a solution to both the 
 vehicle scheduling problem (VSP) and
 the vehicle rescheduling problem (VRSP).
@@ -24,7 +40,24 @@ and since the surrounding conditions can change in real time,
 preference is given to finding a solution quickly
 over finding an optimal solution.
 
-Beyond just Flatland, this body of understanding can be translated to more general problems faced by railway operators.
+Furthermore, the quantitative evaluation of encodings
+gives us an idea of how ASP-based approaches compare to machine learning
+and other similar approaches.
+However, is not strictly necessary that the encodings outperform high-ranking
+encodings from the competition,
+as answer set programming provides important guarantees that other approaches do not,
+for example the avoidance of deadlocks and collisions,
+and that all trains reach their goals.
+
+Finally, solving the Flatland problem requires
+accounting for trains that move at various speeds.
+The speed characteristic was initially included to simulate the discrepancies between
+fast-moving intercity trains and slow-moving local or freight trains.
+This concept has already been explored in our encodings,
+but is yet to be finalized.
+
+\subsection{Application}
+Beyond just Flatland, this body of understanding can be translated to critical problems faced by railway operators.
 Narayanaswami and Rangaraj classify problems in railway operations into broad categories from planning to execution \cite{narran2011a}.
 Specific problems from across that spectrum that are worth addressing include
 \begin{itemize}
